@@ -7,7 +7,8 @@ const AddCake = () => {
 
   const sendCake = (event) => {
     event.preventDefault()
-    fetch('https://nameless-anchorage-63339.herokuapp.com/', {
+    fetch('http://3.80.100.53:4000/', {
+    // fetch('https://nameless-anchorage-63339.herokuapp.com/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

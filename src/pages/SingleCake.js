@@ -9,7 +9,8 @@ const SingleCake = () => {
   const { name, image, phone, eventdate, description, zipcode } = location.state
   const handleDelete = (event) => {
     event.preventDefault()
-    fetch(`https://nameless-anchorage-63339.herokuapp.com/?name=${name}`, {
+    fetch(`http://3.80.100.53:4000/?name=${name}`, {
+    // fetch(`https://nameless-anchorage-63339.herokuapp.com/?name=${name}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -21,7 +22,8 @@ const SingleCake = () => {
   }
   const handleUpdate = (event) => {
     event.preventDefault()
-    fetch(`https://nameless-anchorage-63339.herokuapp.com/?name=${name}`, {
+    fetch(`http://3.80.100.53:4000/?name=${name}`, {
+    // fetch(`https://nameless-anchorage-63339.herokuapp.com/?name=${name}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

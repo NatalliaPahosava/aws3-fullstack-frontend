@@ -4,7 +4,8 @@ import { CakeCard } from '../components/CakeCard'
 const Home = () => {
   const [cakes, setCakes] = useState([])
   useEffect(() => {
-    fetch('https://nameless-anchorage-63339.herokuapp.com/')
+    fetch('http://3.80.100.53:4000/')
+    // fetch('https://nameless-anchorage-63339.herokuapp.com/')
       .then((res) => res.json())
       .then((data) => setCakes(data))
       .catch((err) => console.error(err))

@@ -14,7 +14,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && deploy"
+    "deploy": "aws s3 sync build/ s3://aws3-fullstack-frontend-np",
+    "prod": "npm run build && npm run deploy"
   },
   "eslintConfig": {
     "extends": [
